@@ -1,11 +1,13 @@
-#include <iostream>
+#include<iostream>
 
-
-int main(int argc, char* argv[]) {
-	int a = 0;
-	std::cin >> a;
-	int b = a / 6;
-	int c = (a * 4) / 6;
-	std::cout << b << " " << c << " " << b << std::endl;
+int main(int argc, char argv[]) {
+	int s = 0;
+	scanf_s("%d", &s);
+	int a = s / 6;
+	int b = s / 6;
+	int c = (s * 2) / 3;
+	printf("%d ", a);
+	printf("%d ", c);
+	printf("%d", b);
 	return EXIT_SUCCESS;
 }
