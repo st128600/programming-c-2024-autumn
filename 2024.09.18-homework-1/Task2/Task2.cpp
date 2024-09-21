@@ -1,9 +1,8 @@
-#include <iostream>
+#include<iostream>
 
-int main() {
+int main(int argc, char* argv[]) {
 	int a = 0;
-	std::cin >> a;
-	std::cout << a << std::endl;
+	scanf_s("%d", &a);
+	printf("%d", a);
 	return EXIT_SUCCESS;
 }
- 
