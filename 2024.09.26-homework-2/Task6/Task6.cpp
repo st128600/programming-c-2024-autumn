@@ -15,10 +15,10 @@ int main(int argc, char* argv[]) {
         printf("-1");
     }
     else {
-        if (a == 0 && b != 0 && c != 0) {
+        if (a == 0 && b != 0 ) {
             double x = f / b;
             printf("1 \n"); 
-            printf("%.6lf \n", x);
+            printf("%.10lf \n", x);
         }
         else {
             if (D < 0) {
@@ -27,16 +27,16 @@ int main(int argc, char* argv[]) {
             else {
                 if (D == 0) {
                     printf("1");
-                    double x1 = (g + sqrt(D)) / 2 * a;
-                    double x2 = (g - sqrt(D)) / 2 * a;
-                    printf("%.6lf", x1);
+                    double x1 = (g + sqrt(D)) / (2 * a);
+                    double x2 = (g - sqrt(D)) / (2 * a);
+                    printf("%.10lf", x1);
                 }
                 else {
-                    double x1 = (g + sqrt(D)) / 2 * a;
-                    double x2 = (g - sqrt(D)) / 2 * a;
+                    double x1 = (g + sqrt(D)) / (2 * a);
+                    double x2 = (g - sqrt(D)) / (2 * a);
                     printf("2 \n"); 
-                    printf("%.6lf \n", x1);
-                    printf("%.6lf \n", x2);
+                    printf("%.10lf \n", x1);
+                    printf("%.10lf \n", x2);
                 }
             }
         }
