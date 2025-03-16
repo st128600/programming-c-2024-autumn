@@ -29,7 +29,8 @@ public:
     }
     ArrayList(ArrayList& list)
     {
-
+        //this->len = list.len;
+        //this->data = list.data;
         this->init(list.len);
         for (int i = 0; i < list.len; ++i)
         {
@@ -262,10 +263,13 @@ int main(int argc, char* argv[])
     int n = 23;
     ArrayList list(n);
 
+    //list.recur(6);
     list.randomize();
     list.print();
     list.quicksort(0, n - 1);
     list.print();
+    //list.reverse(1, 1);
+    //list.print();
 
     return 0;
 }
